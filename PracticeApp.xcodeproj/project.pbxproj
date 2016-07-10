@@ -18,8 +18,6 @@
 		0D4927731D11A2DE00F8FD4B /* NewsHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D4927721D11A2DE00F8FD4B /* NewsHeader.xib */; };
 		0D4927761D11ABDE00F8FD4B /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4927751D11ABDE00F8FD4B /* TableViewController.m */; };
 		0D4927791D11BEE700F8FD4B /* TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4927781D11BEE700F8FD4B /* TableView.m */; };
-		0D4927821D12B4CF00F8FD4B /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4927811D12B4CF00F8FD4B /* KeyboardViewController.m */; };
-		0D4927861D12B4CF00F8FD4B /* AlexKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0D49277E1D12B4CF00F8FD4B /* AlexKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +35,6 @@
 			remoteGlobalIDString = 0D49273B1D11494A00F8FD4B;
 			remoteInfo = PracticeApp;
 		};
-		0D4927841D12B4CF00F8FD4B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0D4927341D11494A00F8FD4B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0D49277D1D12B4CF00F8FD4B;
-			remoteInfo = AlexKeyboard;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,7 +44,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				0D4927861D12B4CF00F8FD4B /* AlexKeyboard.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,10 +72,6 @@
 		0D4927751D11ABDE00F8FD4B /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		0D4927771D11BEE700F8FD4B /* TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableView.h; sourceTree = "<group>"; };
 		0D4927781D11BEE700F8FD4B /* TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableView.m; sourceTree = "<group>"; };
-		0D49277E1D12B4CF00F8FD4B /* AlexKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AlexKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		0D4927801D12B4CF00F8FD4B /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
-		0D4927811D12B4CF00F8FD4B /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
-		0D4927831D12B4CF00F8FD4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,13 +96,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0D49277B1D12B4CF00F8FD4B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -126,7 +105,6 @@
 				0D49273E1D11494A00F8FD4B /* PracticeApp */,
 				0D4927581D11494A00F8FD4B /* PracticeAppTests */,
 				0D4927631D11494A00F8FD4B /* PracticeAppUITests */,
-				0D49277F1D12B4CF00F8FD4B /* AlexKeyboard */,
 				0D49273D1D11494A00F8FD4B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -137,7 +115,6 @@
 				0D49273C1D11494A00F8FD4B /* PracticeApp.app */,
 				0D4927551D11494A00F8FD4B /* PracticeAppTests.xctest */,
 				0D4927601D11494A00F8FD4B /* PracticeAppUITests.xctest */,
-				0D49277E1D12B4CF00F8FD4B /* AlexKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,16 +166,6 @@
 			path = PracticeAppUITests;
 			sourceTree = "<group>";
 		};
-		0D49277F1D12B4CF00F8FD4B /* AlexKeyboard */ = {
-			isa = PBXGroup;
-			children = (
-				0D4927801D12B4CF00F8FD4B /* KeyboardViewController.h */,
-				0D4927811D12B4CF00F8FD4B /* KeyboardViewController.m */,
-				0D4927831D12B4CF00F8FD4B /* Info.plist */,
-			);
-			path = AlexKeyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -214,7 +181,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				0D4927851D12B4CF00F8FD4B /* PBXTargetDependency */,
 			);
 			name = PracticeApp;
 			productName = PracticeApp;
@@ -257,23 +223,6 @@
 			productReference = 0D4927601D11494A00F8FD4B /* PracticeAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		0D49277D1D12B4CF00F8FD4B /* AlexKeyboard */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0D4927871D12B4CF00F8FD4B /* Build configuration list for PBXNativeTarget "AlexKeyboard" */;
-			buildPhases = (
-				0D49277A1D12B4CF00F8FD4B /* Sources */,
-				0D49277B1D12B4CF00F8FD4B /* Frameworks */,
-				0D49277C1D12B4CF00F8FD4B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AlexKeyboard;
-			productName = AlexKeyboard;
-			productReference = 0D49277E1D12B4CF00F8FD4B /* AlexKeyboard.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -294,9 +243,6 @@
 						CreatedOnToolsVersion = 7.3.1;
 						TestTargetID = 0D49273B1D11494A00F8FD4B;
 					};
-					0D49277D1D12B4CF00F8FD4B = {
-						CreatedOnToolsVersion = 7.3.1;
-					};
 				};
 			};
 			buildConfigurationList = 0D4927371D11494A00F8FD4B /* Build configuration list for PBXProject "PracticeApp" */;
@@ -315,7 +261,6 @@
 				0D49273B1D11494A00F8FD4B /* PracticeApp */,
 				0D4927541D11494A00F8FD4B /* PracticeAppTests */,
 				0D49275F1D11494A00F8FD4B /* PracticeAppUITests */,
-				0D49277D1D12B4CF00F8FD4B /* AlexKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -340,13 +285,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0D49275E1D11494A00F8FD4B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0D49277C1D12B4CF00F8FD4B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -384,14 +322,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0D49277A1D12B4CF00F8FD4B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0D4927821D12B4CF00F8FD4B /* KeyboardViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -404,11 +334,6 @@
 			isa = PBXTargetDependency;
 			target = 0D49273B1D11494A00F8FD4B /* PracticeApp */;
 			targetProxy = 0D4927611D11494A00F8FD4B /* PBXContainerItemProxy */;
-		};
-		0D4927851D12B4CF00F8FD4B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0D49277D1D12B4CF00F8FD4B /* AlexKeyboard */;
-			targetProxy = 0D4927841D12B4CF00F8FD4B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -582,28 +507,6 @@
 			};
 			name = Release;
 		};
-		0D4927881D12B4CF00F8FD4B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = AlexKeyboard/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = come.PracticeApp.AlexKeyboard;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		0D4927891D12B4CF00F8FD4B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = AlexKeyboard/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = come.PracticeApp.AlexKeyboard;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -642,14 +545,6 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
-		};
-		0D4927871D12B4CF00F8FD4B /* Build configuration list for PBXNativeTarget "AlexKeyboard" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0D4927881D12B4CF00F8FD4B /* Debug */,
-				0D4927891D12B4CF00F8FD4B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
