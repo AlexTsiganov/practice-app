@@ -17,6 +17,8 @@
     NSMutableArray *mTableData;
 }
 
+const static float tableViewHeight = 300;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -24,6 +26,8 @@
     for (int i=0; i<100; i++) {
         [mTableData addObject:[NSString stringWithFormat:@"test %d",i]];
     }
+    
+    [self.tableView addSubview:[self tableViewHeadet]];
     [self.tableView reloadData];
 }
 
@@ -31,6 +35,7 @@
 {
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), height)];
     [view setBackgroundColor:color];
+    [view setClipsToBounds:false];
     return view;
 }
 
@@ -50,18 +55,30 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TableViewCell"];
     cell.textLabel.text = mTableData[indexPath.row];
+    [cell setBackgroundColor:[UIColor greenColor]];
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return 60;
+    return 0;
+}
+
+- (UIView*) tableViewHeadet
+{
+    UIView *header = [self viewTest:tableViewHeight withColor:[UIColor yellowColor]];
+    UIView *test = [self viewTest:30 withColor:[UIColor colorWithRed:255 green:0 blue:0 alpha:0.5]];
+    CGPoint center = test.center;
+    center.y = tableViewHeight-15;
+    [test setCenter:center];
+    [header addSubview:test];
+    return header;
 }
 
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    return [self viewTest:60 withColor:[UIColor yellowColor]];
+    return NULL;
 }
 
 @end

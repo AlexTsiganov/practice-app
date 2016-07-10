@@ -80,6 +80,7 @@
 
 -(void) scrollViewDidScroll:(UIScrollView *)scrollView
 {
+    return;
     float offSet = mTableView.contentOffset.y;
 
     float x1 = CGRectGetHeight(mTableViewHeader.frame)-60;
